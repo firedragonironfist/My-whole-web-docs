@@ -1,0 +1,169 @@
+<!-- working first program  -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <style type="text/css">
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        width: 33%;
+        text-align: center;
+        background-color: darkgray;
+      }
+      table {
+        margin: auto;
+      }
+      input {
+        text-align: right;
+      }
+    </style>
+
+    <script type="text/javascript">
+      function calc(clicked_id) {
+        var val1 = parseFloat(document.getElementById("value1").value);
+        var val2 = parseFloat(document.getElementById("value2").value);
+
+        if (isNaN(val1) || isNaN(val2)) {
+          alert("Please enter appropriate number");
+        }
+        else if(clicked_id=="add"){
+            document.getElementById("answer").value=val1+val2;
+        }
+        else if(clicked_id=="sub"){
+            document.getElementById("answer").value=val1-val2;
+        }
+        else if(clicked_id=="mul"){
+            document.getElementById("answer").value=val1*val2;
+        }
+        else if(clicked_id=="div"){
+            document.getElementById("answer").value=val1/val2;
+        }
+      }
+
+      function cls(){
+        value1.value="0";
+        value2.value="0";
+        answer.value="";
+      }
+    </script>
+  </head>
+  <body>
+    <table>
+        <tr>
+            <th colspan="4">Simple calucaltor</th>
+        </tr>
+        <tr>
+            <td>value1</td>
+            <td><input type="text" id="value1" value="0" /></td>
+            <td>value2</td>
+            <td><input type="text" id="value2" value="0" /></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="add" value="addition" onclick="calc(this.id)" />
+            </td>
+            <td>
+                <input type="button" id="sub" value="subtraction" onclick="calc(this.id)" />
+            </td>
+            <td>
+                <input type="button" id="mul" value="multiplication" onclick="calc(this.id)" />
+            </td>
+            <td>
+                <input type="button" id="div" value="division" onclick="calc(this.id)" />
+            </td>
+        </tr>
+        <tr>
+            <td>answer:</td>
+            <td>
+                <input type="text" id="answer" value="" disabled />
+            </td>
+            <td colspan="2">
+                <input type="button" value="clear all" onclick="cls()" />
+            </td>
+        </tr>
+    </table>
+  </body>
+</html> -->
+
+
+<!-- working 2nd program  -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>second program</title>
+    <style type="text/css">
+      p{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      var grow = setInterval(growing,1000);
+      var font_size=5;
+      var p=document.getElementById("demo");
+      function growing(){
+        font_size+=5;
+        p.innerHTML="TEXT GROWING";
+        p.setAttribute("style","font-size:"+font_size+"px;color:red");
+        if(font_size>=50){
+        clearInterval(grow);
+        var shrink = setInterval(shrinking,1000);
+        }
+      }
+      function shrinking(){
+        font_size-=5;
+        p.innerHTML="TEXT SHRINKING";
+        p.setAttribute("style","font-size:"+font_size+"px;color:blue");
+        if(font_size===5){
+        clearInterval(shrink);
+        }
+      } 
+    </script>
+  </body>
+</html> -->
+
+<!-- working third program  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Third Program</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var str=prompt("enter the string","");
+      if(!(isNaN(str))) 
+      {
+        var num,rev=0,remainder;
+        num=parseInt(str);
+
+        while(num!=0)
+        {
+          remainder = num%10;
+          num = parseInt(num/10);
+          rev = rev*10+remainder;
+        }
+        alert("Reverse of " + str + "is" + rev);
+      }
+      else
+      {
+        str=str.toUpperCase();
+        for(var i=0;i<str.length;i++){
+          var chr=str.charAt(i);
+          if(chr=='A'||chr=='E'||chr=='I'||chr=='E'||chr=='U')
+            break;
+        }
+        if (i<str.length)
+        alert("The Position of the left most vowel is "+ (i+1));
+        else
+        alert("No vowel found in the entered string");
+      } 
+    </script>
+  </body>
+</html>

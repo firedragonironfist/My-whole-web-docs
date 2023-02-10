@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="C:\Users\91636\Desktop\wdc\Airline\main.css" />
+    <title>FLY OFF</title>
+    <nav
+      class="navbar navbar-expand-lg sticky-top"
+      style="background-color: #cdfcf6"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="C:\Users\91636\Desktop\wdc\Airline\index.html"
+          >FLY OFF</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="C:\Users\91636\Desktop\wdc\Airline\book.html"
+                >Book</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="C:\Users\91636\Desktop\wdc\Airline\manageflights.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Manage
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="C:\Users\91636\Desktop\wdc\Airline\manageflights.html">View Your Booking</a></li>
+                <li>
+                  <a class="dropdown-item" href="C:\Users\91636\Desktop\wdc\Airline\manageflights.html">Change Your Booking</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="C:\Users\91636\Desktop\wdc\Airline\manageflights.html">Flight Status</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="C:\Users\91636\Desktop\wdc\Airline\help.html"
+                >Help/Support</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search For Flights"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+          <form class="d-flex">
+            <div class="d-flex flex-row-reverse">
+              <div class="p-2">
+                <a class="btn" href="login.html" role="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-person-circle"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path
+                      fill-rule="evenodd"
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                    />
+                  </svg>
+                  Login
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </head>
+  <body style="background-color: #faf7f0">
+    <div class="row text-center" style="width: 900px; height: 300px; margin:auto; padding-top: 15%;">
+      <div class="col">
+        <label for="exampleDataList" class="form-label">Flying To</label>
+        <input
+          class="form-control form-control shadow p-3 mb-5 bg-body-tertiary rounded"
+          list="datalistOptions"
+          id="exampleDataList"
+          placeholder="Search For flights"
+        />
+        <datalist id="datalistOptions">
+          <option value="Mumbai"></option>
+          <option value="Delhi"></option>
+          <option value="Bangalore"></option>
+          <option value="Hyderabad"></option>
+          <option value="Ahmedabad"></option>
+          <option value="Chennai"></option>
+          <option value="Kolkata"></option>
+          <option value="Pune"></option>
+          <option value="Jaipur"></option>
+          <option value="Surat"></option>
+        </datalist>
+      </div>
+      <div class="col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+        </svg>
+      </div>
+      
+      <div class="col">
+        <label for="exampleDataList" class="form-label">Flying To</label>
+        <input
+          class="form-control form-control shadow p-3 mb-5 bg-body-tertiary rounded"
+          list="datalistOptions"
+          id="exampleDataList"
+          placeholder="Search For flights"
+        />
+        <datalist id="datalistOptions">
+          <option value="Mumbai"></option>
+          <option value="Delhi"></option>
+          <option value="Bangalore"></option>
+          <option value="Hyderabad"></option>
+          <option value="Ahmedabad"></option>
+          <option value="Chennai"></option>
+          <option value="Kolkata"></option>
+          <option value="Pune"></option>
+          <option value="Jaipur"></option>
+          <option value="Surat"></option>
+        </datalist>
+      </div> 
+    </div>
+    <button type="button" class="btn btn-danger" style="margin-left: 710px;margin-top: 50px;">Search Flights</button>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!-- below is the datalist code to use to make search bar  -->
+<!-- <label for="exampleDataList" class="form-label">Flying To</label>
+        <input
+          class="form-control form-control shadow p-3 mb-5 bg-body-tertiary rounded"
+          list="datalistOptions"
+          id="exampleDataList"
+          placeholder="Search For flights"
+        />
+        <datalist id="datalistOptions">
+          <option value="Mumbai"></option>
+          <option value="Delhi"></option>
+          <option value="Bangalore"></option>
+          <option value="Hyderabad"></option>
+          <option value="Ahmedabad"></option>
+          <option value="Chennai"></option>
+          <option value="Kolkata"></option>
+          <option value="Pune"></option>
+          <option value="Jaipur"></option>
+          <option value="Surat"></option>
+        </datalist> -->
+
+        <!-- <div class="d-none d-xl-block position-absolute start-50 top-50 translate-middle" style="background-color: #BCCEF8;">
+          <div class="rounded p-3" style="margin-bottom: 40%;">
+            <div class="d-flex align-items-center">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label fw-bold fs-7" for="flexRadioDefault1">
+                  Return
+                </label>
+              </div>
+              <div class="form-check mx-2">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label fw-bold fs-7" for="flexRadioDefault2">
+                  One Way
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label fw-bold fs-7" for="flexRadioDefault2">
+                  Multi-City
+                </label>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <label for="exampleDataList" class="form-label fw-bold fs-8 m-0">Flying To</label>
+            <input
+              class="form-control form-control shadow p-3 mb-5 bg-body-tertiary rounded"
+              list="datalistOptions"
+              id="exampleDataList"
+              placeholder="Airport or City"
+            />
+            <datalist id="datalistOptions">
+              <option value="Mumbai"></option>
+              <option value="Delhi"></option>
+              <option value="Bangalore"></option>
+              <option value="Hyderabad"></option>
+              <option value="Ahmedabad"></option>
+              <option value="Chennai"></option>
+              <option value="Kolkata"></option>
+              <option value="Pune"></option>
+              <option value="Jaipur"></option>
+              <option value="Surat"></option>
+            </datalist>
+            </div>
+          </div> -->
