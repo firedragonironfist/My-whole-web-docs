@@ -1,0 +1,284 @@
+making new classes in styles
+use classList to add many classes style
+classList.add('') // this helps to push things
+classList.remove(' ') //remove the class
+classList.contains(' ') // does it contain some class?
+classList.toggle(' ') // used to remove or add used to toggle them
+
+
+classList really help full
+querySelectorAll or querySelector are good too 
+
+use toggle once it removes whatever you have inputed inside toggle
+and again if u toggle the same code it will return back to its normal
+styles
+
+.parentElement to shift to the parent class upwards 
+one element can have one direct parent
+but we can have multiple children
+like in paragraph many anchor tags, bold, etc .. 
+document.querySelector('p').children to see all 
+
+document.createElement('img') // make me a img element 
+const newImg = '''''''''''''''''''
+console.dir(newImg)
+newImg.src('           ') //paste the source 
+document.body.appendChild(newImg) //append as last child of the body 
+newImg.classList.add('square') // to add some class 
+const newH3 = document.createElelemt('h3')
+newh3
+newH3.innerText = 'I am new'
+documnet.body.appendChild(newH3)
+// it will append at the end of the page
+
+append is more flexible to insert more than 1 element
+const p = document.querySelector('p")
+p.append('I am new guy' )// used to add text appended at the end of the paragraph
+
+p.append(' dfhjiahdfjhas' , 'jaksfhkjahfahl') //can append many things
+
+const newB = DOCUMENT.CREATEeLEMENT('B')
+NEWb.APPEND(HI)
+// TO WHAT ELEMENT YOU NEED TO MAKE IT PREPEND OR ADD IT TO THE START OF THE PARAGRAPH
+P.PREPEND(NEWb)
+
+TO INSERT SOMETHING AS A NEXT SIBLING TO BETWEEN TO ELEMENTS
+
+element.insertAdjacentEleement(position, element)
+
+between h1 and the imgage 
+selecct h2 
+const h2 = doc.cretaeelement(hfdisr
+h2.append(;dadefafka)
+cosnf 
+
+//make new and append
+const h2 = document.createElement('h2')
+h2.append('Are Adoreable chickens')
+
+//put the const into a variable
+cosnt h1 = document.querySelector('h1')
+
+afterend and 
+
+//select the variable and then add appended
+//(where to?, and element to be inserted)
+h1.insertAdjacentElement('afterend', h2)
+afterend -> makes next sibling
+
+after similar to afterend 
+document.createElement('h3')
+h
+
+" "-> write what you want to search
+use " " EXACT Match
+
+site:url " "
+
+//to eleminate jquery searches used
+" " -jquery
+
+After:2020 at the end of the google search
+2013...2015 at the end gives searches at this time period
+
+Related:URL to search website of similar kind
+
+remove child
+node.removechild()
+select the parent and then remove the child
+const li = document. queerySelector('li')
+const ul = li.parentElement 
+ul.removeChild(li)
+
+remote child needs parent element
+b.parentElement.removeChild(b)
+
+remove we need to remove the actual thing we need to remove
+
+remove directly removes 
+
+onclick ="alert(' '); alert(' ')"
+ondblclick ="alert(' '); alert(' ')"
+
+const h1 = document.query
+const r = Math.floor(Math.random() * 255);
+const g = Math.floor(Math.random() * 255);
+const b = Math.floor(Math.random() * 255);
+const newColor = `rgb(${r}, ${g}, ${b})`
+document.body.style.backgroundColor = newColor
+h1.innerText = newColor
+
+const randomColor = () => {
+
+const input = document.querySelector('#catname');
+input.value -> gives the value of the input currently
+input.value = "" to show input value is empty
+
+use input.value to get the data
+console.log(input.value)
+const list  = document.querySelector('#cats')
+const catName = input.value
+const newLi = documen.createElement('LI')
+<li></li>
+
+newLi.innerText = catName;
+console.log(newLI);
+list.append(newLI);
+e.preventDefault();
+
+input.value = " "; // to stop showing in the placeholder of the button
+
+const input  =document.querySelector('input')
+input.addEventListiner('input' tyoing something in input box fires the event)
+
+console.log(e) we get the event s
+
+h1.innerText = input.value live in syncc text when we type using input event
+input.eventListner does not encompass things 
+
+para onclick = alert paragraph clicked {
+I am a paragraph
+button onclick = "alert('button clicked')"
+}
+
+by pressing twice we get para clicked
+then button clicked
+
+bubble from bottom to top it is called bubbling we want event to bubble up 
+e.stopPropagation() helps to stop bubbling up 
+helps to separate event listners without bubbling it 
+
+i want to remove 
+add event listner to li
+li.remove() to remove the li when clicked
+
+we need to add event listner that would do for the future changes to 
+we can attach it ul which will stay instead of lis 
+
+const cont = document.querySelector('tweeets')
+
+console.log(click on ul)
+console.log(e);
+target is set to li when clicked on  
+e.target.remove();
+it  should also work for the new ones
+each li also has a button 
+e.target.nodeName === 'LI' && e.target.remove();
+runs if the targets node name is LI then only remove 
+
+this is called event delegation 
+
+call stack to see where it is in js
+LIFO data structure call stack 
+to keep track of where it is 
+const isRightTriangle(3,4,5) 
+true
+(3,4,8)
+calls square three times
+which calls multiply
+
+open in sources under page click on app.js
+
+call isRightTriangle and put breakpoint at that time pauses execution
+
+console.log('BEFORE')
+difioasfaiosjais()
+console.log('DONE') 
+
+how js works under the hood why 
+js is single threaded cannot be multitasking
+at most one line of code so it takes time
+
+setTimeOut(()=>{console.log("")}, 3000)
+
+
+browser does the work
+
+browser itself is not written in js it can 
+
+h1 tv show
+ in form input text placeholder TV show title
+button search 
+form refreshes page when submitted
+
+axios included 
+
+const form = document.querySelector('#Searchform')
+form.addEventListner('submit', asyncfunction(e){
+	e.preventDefault();
+	console.log("SUBMITTED")
+	const searchTerm = form.elements.query.value;
+	const res = await axios.get(urlq=${searchTerm})	
+	console.log(res.data[0].show.image.medium)
+makeImages(res.data)
+
+})
+
+const makeImages = (shows) =>{
+	for(let result of shows){
+	const img = document.createElement('IMG')
+	img.src = result.show.show.image
+	document.body.append(img)
+	}
+}
+
+module.exports = "hello"
+
+const math = require(./math')
+
+module.exports.add = add;
+
+console.log(math.square(9))
+
+module.exports -> exports
+
+exports.PI = PI;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

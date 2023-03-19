@@ -1,0 +1,8 @@
+Search this to get the 
+Data Catalog panel class
+
+in tree.py under _popupMenuMapset def you
+can find the switchmapset, paste, deletemapset etc..
+
+in tree.py find for 
+onCopyMapsetPath
